@@ -28,7 +28,7 @@ Firstly, I worked on properly joining the different tables and then aggregating 
 
 1. __Joins and aggregations:__
     1. Creating a DataFrame with transactions containing only training set card_ids. This was done by doing a left join of training DF & transactions DF on the card_id column. This left rows of the test set with NaNs; on removing these rows, only transactions of training card_ids remained. I have not added the file in which this was done (did'nt seem useful).
-    2. Aggregating training set transactions: Please review this file: (./Aggregating Transactions.ipynb)
+    2. Aggregating training set transactions: Please review this file: (/Aggregating Transactions.ipynb)
 
 2. __Selecting Validation Set (File Link: ):__ Quickly apply a few different algorithms and then check the scores on validation and test set. Doing this 4 or 5 times and check if the results of Val vs Test form around about a straight line. This generally indicates that the validation set is reflective of the test set and can be used for algo fine tuning.
     - __Results:__ The Val set looked good and was chosen.
