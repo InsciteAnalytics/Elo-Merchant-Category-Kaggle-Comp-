@@ -15,6 +15,7 @@ The Data broadly consisted of 3 sections; Details about the customer, Transactio
        - Card_id: Unique customer identifier
        - First_active_month: Customer's first activity
        - 3 anonymized categorical features
+       - Target feature
 2. __Transactions:__ Historical transactions made by customers. Around 30 million in total. Most features were anonymized but a few were named.
 3. __Merchants:__ Metadata about the several merchants used (2 tables). Some features like average sales etc were named but most were anonymized.
 4. __Test Set:__ Identical to the training set
@@ -25,8 +26,9 @@ Firstly, I worked on properly joining the different tables and then aggregating 
 
 ### Step wise walk through
 
-1. __Joins and aggregations:__ are you kidding 
-    - 
+1. __Joins and aggregations:__
+    1. Creating a DataFrame with transactions containing only training set card_ids. This was done by doing a left join of training DF & transactions DF on the card_id column. This left rows of the test set with NaNs; on removing these rows, only transactions of training card_ids remained. I have not added the file in which this was done (did'nt seem useful).
+    2. Aggregating training set transactions: Please review this file: 
 
 2. __Selecting Validation Set (File Link: ):__ Quickly apply a few different algorithms and then check the scores on validation and test set. Doing this 4 or 5 times and check if the results of Val vs Test form around about a straight line. This generally indicates that the validation set is reflective of the test set and can be used for algo fine tuning.
     - __Results:__ The Val set looked good and was chosen.
