@@ -25,7 +25,7 @@ Firstly, I worked on properly joining the different tables and then aggregating 
 
 ### Step wise walk through
 
-1. __Joins and aggregations:__ 
+1. __Joins and aggregations:__ are you kidding 
     - 
 
 2. __Selecting Validation Set (File Link: ):__ Quickly apply a few different algorithms and then check the scores on validation and test set. Doing this 4 or 5 times and check if the results of Val vs Test form around about a straight line. This generally indicates that the validation set is reflective of the test set and can be used for algo fine tuning.
