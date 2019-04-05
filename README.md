@@ -32,3 +32,6 @@ Firstly, I worked on properly joining the different tables and then aggregating 
 
 2. __Selecting Validation Set (File Link: [Selecting Val Set](https://github.com/InsciteAnalytics/Elo-Merchant-Category-Kaggle-Comp-/blob/master/Val-Test%20Sets.ipynb) ):__ Quickly apply a few different algorithms and then check the scores on validation and test set. Doing this 4 or 5 times and check if the results of Val vs Test form around about a straight line. This generally indicates that the validation set is reflective of the test set and can be used for algo fine tuning.
     - __Results:__ The Val set looked good and was chosen.
+3. __Application of Algos & Finetuning:__ The final step was to just apply algorithms iteratively and fine tuning them based on their performance on the validation set. There are dozens of files pertaining to this and quite disorganised; I'll append just two that are relatively bearable:
+    - [Random Forest](https://github.com/InsciteAnalytics/Elo-Merchant-Category-Kaggle-Comp-/blob/master/RF%20on%20combined%20data.ipynb)
+    - [Nueral Nets](https://github.com/InsciteAnalytics/Elo-Merchant-Category-Kaggle-Comp-/blob/master/Neural%20Net%20Post%20Comp.ipynb)
